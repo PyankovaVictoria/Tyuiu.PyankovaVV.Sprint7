@@ -120,7 +120,7 @@ namespace Tyuiu.PyankovaVV.Sprint7.Project.V3.Lib
         public string[,] Search(string num, string[,] array) 
         {
             int rows = array.GetUpperBound(0) + 1;
-            int columns = array.GetUpperBound(1) + 1;
+            int columns = array.Length / rows;
             string[,] matrix = new string[rows, columns];
 
             for (int j = 0; j < columns; j++)
@@ -145,7 +145,7 @@ namespace Tyuiu.PyankovaVV.Sprint7.Project.V3.Lib
         public int[] Count(string[,] array) 
         {
             int rows = array.GetUpperBound(0) + 1;
-            int columns = array.GetUpperBound(1) + 1;
+            int columns = array.Length / rows;
             int[] matrix = new int[3];
             string[] matNames = { "", "", "" };
 

@@ -11,7 +11,7 @@ namespace Tyuiu.PyankovaVV.Sprint7.Project.V3.Test
         [TestMethod]
         public void ValidExist()
         {
-            string path = @"C:\Users\User\Desktop\University.csv";
+            string path = @"C:\Desktop\University.csv";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;
